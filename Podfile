@@ -6,6 +6,7 @@ target 'iOSFirebaseAuth' do
   use_frameworks!
 
   # Pods for iOSFirebaseAuth
+  pod 'Firebase/Auth'
 
   target 'iOSFirebaseAuthTests' do
     inherit! :search_paths
