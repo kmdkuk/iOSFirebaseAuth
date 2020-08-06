@@ -37,6 +37,26 @@ struct ContentView: View {
                   // Send token to your backend via HTTPS
                   // ...
                     print(idToken ?? "idToken is none")
+                    let url = URL(string: "http://localhost:3000/users")
+                    var request = URLRequest(url: url!)
+                    request.httpMethod = "POST"
+                    request.setValue("Applocation/json", forHTTPHeaderField: "Content-Type")
+                    request.setValue("Bearer \(idToken ?? "")", forHTTPHeaderField: "Authorization")
+                    let session = URLSession.shared
+                    session.dataTask(with: request){
+                        (data, response, error) in
+                        if let error = error {
+                            print("Failed to get item info: \(error)")
+                            return;
+                        }
+                        if error == nil, let data = data, let response = response as? HTTPURLResponse {
+                               // HTTPヘッダの取得
+                               print("Content-Type: \(response.allHeaderFields["Content-Type"] ?? "")")
+                               // HTTPステータスコード
+                               print("statusCode: \(response.statusCode)")
+                               print(String(data: data, encoding: .utf8) ?? "")
+                        };
+                    }.resume()
                 }
             }){
                 Text("ログイン")
