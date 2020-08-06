@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		D78D702124DC68E100E59E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D701F24DC68E100E59E00 /* LaunchScreen.storyboard */; };
 		D78D702C24DC68E100E59E00 /* iOSFirebaseAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D702B24DC68E100E59E00 /* iOSFirebaseAuthTests.swift */; };
 		D78D703724DC68E100E59E00 /* iOSFirebaseAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D703624DC68E100E59E00 /* iOSFirebaseAuthUITests.swift */; };
+		D78D704524DC6EA800E59E00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D78D704424DC6EA800E59E00 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D78D703224DC68E100E59E00 /* iOSFirebaseAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFirebaseAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78D703624DC68E100E59E00 /* iOSFirebaseAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSFirebaseAuthUITests.swift; sourceTree = "<group>"; };
 		D78D703824DC68E100E59E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78D704424DC6EA800E59E00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				C7CC2128878E9FD46B77F798 /* Pods-iOSFirebaseAuthTests.debug.xcconfig */,
 				88E6A9416F8B8431EEB32DDC /* Pods-iOSFirebaseAuthTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +141,7 @@
 		D78D701324DC68DF00E59E00 /* iOSFirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
+				D78D704424DC6EA800E59E00 /* GoogleService-Info.plist */,
 				D78D701424DC68DF00E59E00 /* AppDelegate.swift */,
 				D78D701624DC68DF00E59E00 /* SceneDelegate.swift */,
 				D78D701824DC68DF00E59E00 /* ContentView.swift */,
@@ -287,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78D702124DC68E100E59E00 /* LaunchScreen.storyboard in Resources */,
+				D78D704524DC6EA800E59E00 /* GoogleService-Info.plist in Resources */,
 				D78D701E24DC68E100E59E00 /* Preview Assets.xcassets in Resources */,
 				D78D701B24DC68E100E59E00 /* Assets.xcassets in Resources */,
 			);
